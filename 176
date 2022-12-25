@@ -1,0 +1,3 @@
+# I actually reacted with Thumbsdown to this question, because it's unclear whether it's the second highest distinct salary or not.
+
+SELECT max(salary) as SecondHighestSalary FROM Employee WHERE Salary != (SELECT max(Salary) from Employee)
