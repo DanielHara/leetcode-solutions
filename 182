@@ -1,0 +1,13 @@
+# Question 182: https://leetcode.com/problems/duplicate-emails/submissions/
+
+# Not a difficult question, just as most questions about databases on Leetcode
+
+# Write your MySQL query statement below
+
+SELECT email FROM
+(
+    SELECT email, COUNT(*) as email_count
+    FROM Person
+    GROUP BY email
+) as E
+WHERE email_count > 1
