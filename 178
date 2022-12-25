@@ -1,0 +1,12 @@
+# Question 178: https://leetcode.com/problems/rank-scores/submissions/
+
+# Quite easy question if you know that mySQL supports DENSE_RANK function.
+
+# Write your MySQL query statement below
+
+SELECT
+    score,
+    DENSE_RANK() OVER (
+        ORDER BY score DESC
+    ) `rank`
+FROM Scores ORDER BY score DESC
