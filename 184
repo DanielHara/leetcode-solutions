@@ -1,0 +1,14 @@
+# Question 184: https://leetcode.com/problems/department-highest-salary/
+
+# Easy, but quite interesting question!
+
+# Write your MySQL query statement below
+
+SELECT e1.name as `Employee`, e1.salary as `Salary`, Department.name as `Department`
+FROM Employee e1
+INNER JOIN Department ON Department.id=e1.departmentId
+WHERE (e1.salary, e1.departmentId) IN (
+    SELECT MAX(e2.salary), e2.departmentId
+    FROM Employee e2
+    GROUP BY e2.departmentId
+)
