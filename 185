@@ -1,0 +1,12 @@
+# Question 185: https://leetcode.com/problems/department-top-three-salaries
+
+# Quite interesting question
+
+# Write your MySQL query statement below
+SELECT Employee, Salary, Department.name as `Department` FROM
+    (
+        SELECT e.Name As Employee, e.Salary As Salary, e.DepartmentId As DepartmentId,
+        Dense_rank() OVER (PARTITION BY DepartmentId ORDER BY Salary DESC) AS salary_rank FROM Employee e
+    ) as S
+INNER JOIN Department ON Department.id = S.DepartmentId
+WHERE salary_rank <= 3
