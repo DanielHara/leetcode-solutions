@@ -1,0 +1,9 @@
+# Question 1757: https://leetcode.com/problems/recyclable-and-low-fat-products
+
+# So trivial question that I do not know what it is actually doing on LeetCode.
+
+# Write your MySQL query statement below
+
+SELECT product_id
+    FROM Products
+WHERE low_fats = 'Y' AND recyclable = 'Y'
