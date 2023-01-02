@@ -1,0 +1,12 @@
+# Question 1084: https://leetcode.com/problems/sales-analysis-iii/
+
+# Write your MySQL query statement below
+
+SELECT DISTINCT s1.product_id, product_name FROM Sales s1
+INNER JOIN Product ON Product.product_id = s1.product_id
+WHERE s1.sale_date > '2019-01-01' AND s1.sale_date < '2019-03-31'
+AND s1.product_id NOT IN (
+    SELECT DISTINCT product_id
+    FROM Sales
+    WHERE sale_date > '2019-03-31' OR sale_date < '2019-01-01'
+)
