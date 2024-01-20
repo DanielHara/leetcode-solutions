@@ -45,20 +45,11 @@ class Solution:
     def getNumberOfPairsWithDistanceLessOrEqualTo(self, nums: List[int], target: int):
         result = 0
 
-        if (target == 0):
-            print(nums)
-
         for start in range(0, len(nums) - 1):
             end = self.binarySearch(start + 1, len(nums) - 1, nums, target + nums[start])
 
-            if target == 0:
-                print('start = ', start)
-                print('end = ', end)
-
             if end is not None:
                 result = result + end - start
-        
-        print('getNumberOfPairsWithDistanceLessOrEqualTo ', target, 'result = ', result)
 
         return result
 
