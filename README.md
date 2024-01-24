@@ -1,6 +1,6 @@
 # Leetcode-solutions
 
-Having cracked 900+ questions on Leetcode (check out my profile on https://leetcode.com/haradaniel/), trying to aim for 1 question a day since 2019, I'll start to publish my solutions here too!
+After having cracked quite a few questions on Leetcode (check out my profile on https://leetcode.com/haradaniel/), trying to aim for 1 question a day since 2019, I started to publish my solutions here too!
 
 The inspiration for solving one question everyday came from the great book Atomic Habits: https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299
 
@@ -14,4 +14,4 @@ I never look at the solutions, really. If I cannot solve a question after some t
 
 Sometimes I do look at the hints, though. Always as little as possible, and, if so, I peek just at the first hint, and look at the other ones only if I'm still stuck.
 
-After consistently doing this for 5+ years, now I'm approaching 1000 solved questions. That's a LOT. I'm aiming to write a post on Medium about what I learned in this process, and I'll link here.
+After consistently doing this for 5+ years, I've now solved 1000+ questions. That's a LOT. I'm aiming to write a post on Medium about what I learned in this process, and I'll link here.
