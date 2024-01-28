@@ -15,3 +15,5 @@ I never look at the solutions, really. If I cannot solve a question after some t
 Sometimes I do look at the hints, though. Always as little as possible, and, if so, I peek just at the first hint, and look at the other ones only if I'm still stuck.
 
 After consistently doing this for 5+ years, I've now solved 1000+ questions. That's a LOT. I'm aiming to write a post on Medium about what I learned in this process, and I'll link here.
+
+<img width="427" alt="Screenshot 2024-01-28 at 09 44 29" src="https://github.com/DanielHara/leetcode-solutions/assets/17606011/cfd80d53-9ccd-43b6-bb2e-943e9cf1456f">
