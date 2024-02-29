@@ -1,7 +1,7 @@
 # Question 2342: https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/
 
 """
-    Not a difficult question, just use hashmap, and the sum of the digits and the key.
+    Not a difficult question, just use hashmap, and the sum of the digits as the key.
 """
 
 class Solution:
