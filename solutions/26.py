@@ -6,8 +6,6 @@ Question 26: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        i = 0
-
         read_pointer = 0
         write_pointer = 0
         while read_pointer < len(nums):
