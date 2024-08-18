@@ -12,9 +12,11 @@
     '{"a":"e","b":{"c":{"bg":"gd"}}}'
     '{"a":"e","b":{"c":{"bg":"gd"},"tg":"avc"}}'
     '{"a":2,"b":{"c":"d"},"c":true,"d":null}'
+    Also passes the test cases with a primitive:
+    'true'
  */
 
-    /**
+/**
  * @param {string} str
  * @return {null|boolean|number|string|Array|Object}
  */
@@ -36,10 +38,14 @@ var parsePrimitive = function(str) {
         return null;
     }
 
-    return Number(str);
+    return Number(str)
 }
 
 var jsonParse = function(str) {
+    if (str[0] !== '[' && str[0] !== '{') {
+        return parsePrimitive(str)
+    }
+    
     const tokenizedStr = str.split(/({|}|}|:|,)/g)
     const tokens = tokenizedStr.filter(str => str.length > 0 && str !== ',');
 
