@@ -1,5 +1,5 @@
 """
-Question 2512: https://leetcode.com/problems/reward-top-k-students/
+Question 2516: https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/
 
     The idea is: write the string twice, one after the other, and use a modified sliding window to get the answer.
     It's just a bit late in the night, and I'm lazy to debug the last testcase, and decided to ignore my discipline this  time
